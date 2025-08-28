@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asana Yoga Studio - Find Your Inner Peace</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'sage': {
+                            50: '#f6f7f6',
+                            100: '#e3e8e3',
+                            200: '#c7d2c7',
+                            300: '#a3b5a3',
+                            400: '#7a927a',
+                            500: '#5a7a5a',
+                            600: '#456145',
+                            700: '#374d37',
+                            800: '#2d3f2d',
+                            900: '#263426',
+                        },
+                        'warm-gray': {
+                            50: '#fafaf9',
+                            100: '#f5f5f4',
+                            200: '#e7e5e4',
+                            300: '#d6d3d1',
+                            400: '#a8a29e',
+                            500: '#78716c',
+                            600: '#57534e',
+                            700: '#44403c',
+                            800: '#292524',
+                            900: '#1c1917',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter text-warm-gray-800 bg-warm-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-effect border-b border-white/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-leaf text-sage-600 text-2xl"></i>
+                    <span class="text-xl font-semibold text-sage-700">Asana Studio</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-sage-600 hover:text-sage-700 transition-colors font-medium">Home</a>
+                    <a href="#classes" class="text-sage-600 hover:text-sage-700 transition-colors font-medium">Classes</a>
+                    <a href="#about" class="text-sage-600 hover:text-sage-700 transition-colors font-medium">About</a>
+                    <a href="#contact" class="text-sage-600 hover:text-sage-700 transition-colors font-medium">Contact</a>
+                </div>
+                <button class="md:hidden text-sage-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+            <div class="w-full h-full bg-gradient-to-br from-sage-300 via-sage-200 to-warm-gray-100 flex items-center justify-center">
+                <div class="text-center text-sage-600">
+                    <i class="fas fa-spa text-8xl mb-6 opacity-40"></i>
+                    <p class="text-xl font-medium opacity-60">Peaceful Yoga Practice</p>
+                </div>
+            </div>
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto fade-in">
+            <h1 class="text-5xl md:text-7xl font-light text-white mb-6 leading-tight">
+                Find Your <span class="font-semibold text-sage-200">Inner Peace</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-sage-100 mb-8 font-light leading-relaxed">
+                Transform your mind, body, and spirit through the ancient practice of yoga in our serene studio space.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <button class="bg-white text-sage-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-sage-50 transition-all duration-300 hover-lift shadow-lg">
+                    Start Your Journey
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-sage-700 transition-all duration-300">
+                    View Classes
+                </button>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+            <i class="fas fa-chevron-down text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 gradient-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="fade-in">
+                    <h2 class="text-4xl md:text-5xl font-light text-sage-800 mb-6">
+                        Welcome to <span class="font-semibold">Asana Studio</span>
+                    </h2>
+                    <p class="text-lg text-warm-gray-600 mb-6 leading-relaxed">
+                        For over a decade, we've been guiding students on their yoga journey, creating a sanctuary where ancient wisdom meets modern wellness. Our experienced instructors are passionate about helping you discover the transformative power of yoga.
+                    </p>
+                    <p class="text-lg text-warm-gray-600 mb-8 leading-relaxed">
+                        Whether you're a complete beginner or an advanced practitioner, our diverse range of classes and personalized approach ensures everyone finds their perfect practice.
+                    </p>
+                    <div class="flex items-center space-x-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-sage-600">10+</div>
+                            <div class="text-sm text-warm-gray-500 font-medium">Years Experience</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-sage-600">500+</div>
+                            <div class="text-sm text-warm-gray-500 font-medium">Happy Students</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-sage-600">15+</div>
+                            <div class="text-sm text-warm-gray-500 font-medium">Class Types</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-full h-full bg-gradient-to-br from-sage-200 to-sage-300 flex items-center justify-center rounded-2xl shadow-2xl hover-lift" style="min-height: 400px;">
+                        <div class="text-center text-sage-700">
+                            <i class="fas fa-leaf text-6xl mb-4 opacity-50"></i>
+                            <p class="text-lg font-medium">Yoga instructor in peaceful meditation pose</p>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-star text-yellow-400 text-xl"></i>
+                            <div>
+                                <div class="font-semibold text-sage-800">4.9/5 Rating</div>
+                                <div class="text-sm text-warm-gray-500">From 200+ reviews</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes Schedule Section -->
+    <section id="classes" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-light text-sage-800 mb-6">
+                    Our <span class="font-semibold">Class Schedule</span>
+                </h2>
+                <p class="text-lg text-warm-gray-600 max-w-2xl mx-auto">
+                    Choose from our diverse range of yoga classes designed to meet you wherever you are in your practice.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-gradient-to-br from-sage-50 to-sage-100 p-8 rounded-2xl hover-lift">
+                    <div class="w-16 h-16 bg-sage-600 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-sun text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-sage-800 mb-4">Morning Flow</h3>
+                    <p class="text-warm-gray-600 mb-4">Start your day with energizing vinyasa sequences that awaken your body and mind.</p>
+                    <div class="text-sage-600 font-medium">Mon, Wed, Fri • 7:00 AM</div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-warm-gray-50 to-warm-gray-100 p-8 rounded-2xl hover-lift">
+                    <div class="w-16 h-16 bg-warm-gray-600 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-moon text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-warm-gray-800 mb-4">Evening Restore</h3>
+                    <p class="text-warm-gray-600 mb-4">Unwind with gentle, restorative poses perfect for releasing daily tension.</p>
+                    <div class="text-warm-gray-600 font-medium">Tue, Thu • 7:00 PM</div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-sage-50 to-sage-100 p-8 rounded-2xl hover-lift">
+                    <div class="w-16 h-16 bg-sage-600 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-heart text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-sage-800 mb-4">Weekend Bliss</h3>
+                    <p class="text-warm-gray-600 mb-4">Extended sessions combining meditation, breathwork, and flowing movement.</p>
+                    <div class="text-sage-600 font-medium">Sat, Sun • 10:00 AM</div>
+                </div>
+            </div>
+
+            <!-- Weekly Schedule Table -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                <div class="bg-sage-600 px-8 py-6">
+                    <h3 class="text-2xl font-semibold text-white">Weekly Schedule</h3>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead class="bg-sage-50">
+                            <tr>
+                                <th class="px-6 py-4 text-left font-semibold text-sage-800">Time</th>
+                                <th class="px-6 py-4 text-left font-semibold text-sage-800">Monday</th>
+                                <th class="px-6 py-4 text-left font-semibold text-sage-800">Tuesday</th>
+                                <th class="px-6 py-4 text-left font-semibold text-sage-800">Wednesday</th>
+                                <th class="px-6 py-4 text-left font-semibold text-sage-800">Thursday</th>
+                                <th class="px-6 py-4 text-left font-semibold text-sage-800">Friday</th>
+                                <th class="px-6 py-4 text-left font-semibold text-sage-800">Weekend</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-sage-100">
+                            <tr class="hover:bg-sage-25 transition-colors">
+                                <td class="px-6 py-4 font-medium text-warm-gray-800">7:00 AM</td>
+                                <td class="px-6 py-4 text-sage-600">Morning Flow</td>
+                                <td class="px-6 py-4 text-warm-gray-400">-</td>
+                                <td class="px-6 py-4 text-sage-600">Morning Flow</td>
+                                <td class="px-6 py-4 text-warm-gray-400">-</td>
+                                <td class="px-6 py-4 text-sage-600">Morning Flow</td>
+                                <td class="px-6 py-4 text-warm-gray-400">-</td>
+                            </tr>
+                            <tr class="hover:bg-sage-25 transition-colors">
+                                <td class="px-6 py-4 font-medium text-warm-gray-800">10:00 AM</td>
+                                <td class="px-6 py-4 text-warm-gray-400">-</td>
+                                <td class="px-6 py-4 text-sage-600">Gentle Hatha</td>
+                                <td class="px-6 py-4 text-warm-gray-400">-</td>
+                                <td class="px-6 py-4 text-sage-600">Gentle Hatha</td>
+                                <td class="px-6 py-4 text-warm-gray-400">-</td>
+                                <td class="px-6 py-4 text-sage-600">Weekend Bliss</td>
+                            </tr>
+                            <tr class="hover:bg-sage-25 transition-colors">
+                                <td class="px-6 py-4 font-medium text-warm-gray-800">6:00 PM</td>
+                                <td class="px-6 py-4 text-sage-600">Power Yoga</td>
+                                <td class="px-6 py-4 text-warm-gray-400">-</td>
+                                <td class="px-6 py-4 text-sage-600">Power Yoga</td>
+                                <td class="px-6 py-4 text-warm-gray-400">-</td>
+                                <td class="px-6 py-4 text-sage-600">Power Yoga</td>
+                                <td class="px-6 py-4 text-warm-gray-400">-</td>
+                            </tr>
+                            <tr class="hover:bg-sage-25 transition-colors">
+                                <td class="px-6 py-4 font-medium text-warm-gray-800">7:00 PM</td>
+                                <td class="px-6 py-4 text-warm-gray-400">-</td>
+                                <td class="px-6 py-4 text-sage-600">Evening Restore</td>
+                                <td class="px-6 py-4 text-warm-gray-400">-</td>
+                                <td class="px-6 py-4 text-sage-600">Evening Restore</td>
+                                <td class="px-6 py-4 text-warm-gray-400">-</td>
+                                <td class="px-6 py-4 text-warm-gray-400">-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 gradient-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-light text-sage-800 mb-6">
+                    Get in <span class="font-semibold">Touch</span>
+                </h2>
+                <p class="text-lg text-warm-gray-600 max-w-2xl mx-auto">
+                    Ready to begin your yoga journey? Contact us to book your first class or learn more about our programs.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Contact Form -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 hover-lift">
+                    <h3 class="text-2xl font-semibold text-sage-800 mb-6">Send us a Message</h3>
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-warm-gray-700 mb-2">First Name</label>
+                                <input type="text" class="w-full px-4 py-3 border border-warm-gray-300 rounded-lg focus:ring-2 focus:ring-sage-500 focus:border-transparent transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-warm-gray-700 mb-2">Last Name</label>
+                                <input type="text" class="w-full px-4 py-3 border border-warm-gray-300 rounded-lg focus:ring-2 focus:ring-sage-500 focus:border-transparent transition-all">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-warm-gray-700 mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-3 border border-warm-gray-300 rounded-lg focus:ring-2 focus:ring-sage-500 focus:border-transparent transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-warm-gray-700 mb-2">Phone</label>
+                            <input type="tel" class="w-full px-4 py-3 border border-warm-gray-300 rounded-lg focus:ring-2 focus:ring-sage-500 focus:border-transparent transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-warm-gray-700 mb-2">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-3 border border-warm-gray-300 rounded-lg focus:ring-2 focus:ring-sage-500 focus:border-transparent transition-all"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-sage-600 text-white py-4 rounded-lg font-semibold hover:bg-sage-700 transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info & Map -->
+                <div class="space-y-8">
+                    <div class="bg-white rounded-2xl shadow-xl p-8">
+                        <h3 class="text-2xl font-semibold text-sage-800 mb-6">Visit Our Studio</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-4">
+                                <i class="fas fa-map-marker-alt text-sage-600 text-xl mt-1"></i>
+                                <div>
+                                    <div class="font-medium text-warm-gray-800">Address</div>
+                                    <div class="text-warm-gray-600">123 Serenity Lane<br>Peaceful Valley, CA 90210</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <i class="fas fa-phone text-sage-600 text-xl mt-1"></i>
+                                <div>
+                                    <div class="font-medium text-warm-gray-800">Phone</div>
+                                    <div class="text-warm-gray-600">(555) 123-YOGA</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <i class="fas fa-envelope text-sage-600 text-xl mt-1"></i>
+                                <div>
+                                    <div class="font-medium text-warm-gray-800">Email</div>
+                                    <div class="text-warm-gray-600">hello@asanastudio.com</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <i class="fas fa-clock text-sage-600 text-xl mt-1"></i>
+                                <div>
+                                    <div class="font-medium text-warm-gray-800">Hours</div>
+                                    <div class="text-warm-gray-600">Mon-Fri: 6:00 AM - 9:00 PM<br>Sat-Sun: 8:00 AM - 6:00 PM</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                        <div class="h-64 bg-gradient-to-br from-sage-100 to-sage-200 flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="fas fa-map text-sage-600 text-4xl mb-4"></i>
+                                <div class="text-sage-700 font-medium">Interactive Map</div>
+                                <div class="text-sage-600 text-sm">Google Maps integration would go here</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-sage-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-leaf text-sage-300 text-2xl"></i>
+                        <span class="text-xl font-semibold">Asana Studio</span>
+                    </div>
+                    <p class="text-sage-200 mb-4">Transform your life through the practice of yoga. Join our community of mindful practitioners.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-sage-300 hover:text-white transition-colors">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-sage-300 hover:text-white transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-sage-300 hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sage-200">
+                        <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#classes" class="hover:text-white transition-colors">Classes</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Class Types</h4>
+                    <ul class="space-y-2 text-sage-200">
+                        <li>Morning Flow</li>
+                        <li>Evening Restore</li>
+                        <li>Power Yoga</li>
+                        <li>Gentle Hatha</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-sage-200">
+                        <div>123 Serenity Lane</div>
+                        <div>Peaceful Valley, CA 90210</div>
+                        <div>(555) 123-YOGA</div>
+                        <div>hello@asanastudio.com</div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-sage-700 mt-8 pt-8 text-center text-sage-300">
+                <p>&copy; 2024 Asana Studio. All rights reserved. Designed with mindfulness and care.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
