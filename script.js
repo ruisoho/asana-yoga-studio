@@ -192,6 +192,26 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
 
+    // Down arrow scroll functionality
+    const initDownArrowScroll = () => {
+        const downArrow = document.querySelector('.animate-bounce');
+        
+        if (downArrow) {
+            downArrow.addEventListener('click', () => {
+                const aboutSection = document.querySelector('#about');
+                if (aboutSection) {
+                    aboutSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+            
+            // Add cursor pointer to indicate it's clickable
+            downArrow.style.cursor = 'pointer';
+        }
+    };
+
     // Initialize all functionality
     initSmoothScrolling();
     initScrollAnimations();
@@ -201,6 +221,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initScheduleInteractions();
     initCTAButtons();
     initParallaxEffect();
+    initDownArrowScroll();
     
     // Add loading animation completion
     document.body.classList.add('loaded');
